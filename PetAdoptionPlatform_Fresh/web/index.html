@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetCare | Online Pet Adoption</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#f7f8fc;color:#222}
+nav{height:72px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
+.logo{font-size:25px;font-weight:bold;color:#ff6b35}.logo span{color:#222}
+nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+nav a{text-decoration:none;color:#333;font-weight:600}nav a:hover{color:#ff6b35}
+.login-btn{background:#ff6b35;color:#fff!important;padding:11px 21px;border-radius:25px}
+.hero{min-height:570px;display:flex;align-items:center;justify-content:space-between;padding:70px 8%;background:linear-gradient(120deg,#fff2eb,#fff)}
+.hero-text{max-width:590px}.tag{color:#ff6b35;font-weight:bold;margin-bottom:15px;letter-spacing:1px}
+.hero h1{font-size:58px;line-height:1.08;margin-bottom:22px}.hero h1 span{color:#ff6b35}
+.hero p{color:#666;font-size:18px;line-height:1.7;margin-bottom:30px}
+.buttons{display:flex;gap:15px}.btn{display:inline-block;text-decoration:none;padding:14px 26px;border-radius:30px;font-weight:bold}
+.primary{background:#ff6b35;color:#fff}.secondary{border:2px solid #ff6b35;color:#ff6b35}
+.secondary:hover{background:#ff6b35;color:#fff}
+.hero-pet{width:390px;height:390px;border-radius:50%;background:#ffd8c7;display:flex;align-items:center;justify-content:center;font-size:180px;box-shadow:0 20px 50px rgba(255,107,53,.18)}
+section{padding:75px 8%}.section-title{text-align:center;font-size:36px;margin-bottom:12px}
+.section-description{text-align:center;color:#777;margin-bottom:42px}
+.cards,.pet-cards,.role-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card,.role-card,.pet-card{background:#fff;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.07)}
+.card{padding:34px 25px;text-align:center;transition:.3s}.card:hover,.pet-card:hover{transform:translateY(-7px)}
+.icon{font-size:48px;margin-bottom:17px}.card h3,.role-card h3{margin-bottom:12px}
+.card p,.role-card p{color:#777;line-height:1.6}
+.pets{background:#f7f8fc}.pet-card{overflow:hidden;transition:.3s}.pet-image{height:190px;display:flex;align-items:center;justify-content:center;font-size:100px;background:#fff0e9}
+.pet-info{padding:22px}.pet-info h3{font-size:21px;margin-bottom:7px}.pet-info p{color:#777;margin-bottom:17px}
+.adopt-btn{display:inline-block;text-decoration:none;background:#ff6b35;color:#fff;padding:9px 18px;border-radius:20px;font-size:14px;font-weight:bold}
+.role-card{padding:30px;text-align:center;border:1px solid #eee}
+.cta{margin:65px 8%;padding:60px 25px;border-radius:25px;text-align:center;background:#ff6b35;color:#fff}
+.cta h2{font-size:35px;margin-bottom:15px}.cta p{margin-bottom:25px}.cta a{display:inline-block;text-decoration:none;background:#fff;color:#ff6b35;padding:13px 27px;border-radius:25px;font-weight:bold}
+footer{background:#222;color:#fff;text-align:center;padding:35px 8%}footer p{color:#aaa;margin-top:8px}
+@media(max-width:800px){nav ul{display:none}.hero{flex-direction:column;text-align:center;gap:45px}.hero h1{font-size:42px}.buttons{justify-content:center}.hero-pet{width:280px;height:280px;font-size:125px}.cards,.pet-cards,.role-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">🐾 Pet<span>Care</span></div>
+<ul>
+<li><a href="#">Home</a></li><li><a href="#pets">Pets</a></li><li><a href="#about">About</a></li>
+<li><a href="#roles">How It Works</a></li><li><a class="login-btn" href="login.html">Login</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<div class="tag">🐾 GIVE A PET A SECOND CHANCE</div>
+<h1>Find Your New <span>Best Friend</span></h1>
+<p>Discover loving pets waiting for a forever home. Browse pets, connect with shelters and start your adoption journey today.</p>
+<div class="buttons">
+<a href="#pets" class="btn primary">Find a Pet 🐶</a>
+<a href="register.html" class="btn secondary">Join Us</a>
+</div>
+</div>
+<div class="hero-pet">🐕</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Why Choose PetCare?</h2>
+<p class="section-description">We make pet adoption simple, safe and meaningful.</p>
+<div class="cards">
+<div class="card"><div class="icon">🐾</div><h3>Find Loving Pets</h3><p>Browse pets from shelters and find the perfect companion for your family.</p></div>
+<div class="card"><div class="icon">🏠</div><h3>Trusted Shelters</h3><p>Connect directly with animal shelters and learn more about available pets.</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Easy Adoption</h3><p>Submit an adoption application and communicate with shelters easily.</p></div>
+</div>
+</section>
+
+<section class="pets" id="pets">
+<h2 class="section-title">Meet Some Lovely Pets</h2>
+<p class="section-description">These pets are looking for their forever homes.</p>
+<div class="pet-cards">
+<div class="pet-card"><div class="pet-image">🐕</div><div class="pet-info"><h3>Bruno</h3><p>Labrador • 2 Years</p><a href="login.html" class="adopt-btn">Adopt Bruno</a></div></div>
+<div class="pet-card"><div class="pet-image">🐈</div><div class="pet-info"><h3>Mili</h3><p>Persian Cat • 1 Year</p><a href="login.html" class="adopt-btn">Adopt Mili</a></div></div>
+<div class="pet-card"><div class="pet-image">🐶</div><div class="pet-info"><h3>Rocky</h3><p>Beagle • 3 Years</p><a href="login.html" class="adopt-btn">Adopt Rocky</a></div></div>
+</div>
+</section>
+
+<section id="roles">
+<h2 class="section-title">How PetCare Works</h2>
+<p class="section-description">Different users have different responsibilities.</p>
+<div class="role-cards">
+<div class="role-card"><div class="icon">👨‍💼</div><h3>Admin</h3><p>Manage users, approve pet listings, monitor applications and manage settings.</p></div>
+<div class="role-card"><div class="icon">🏠</div><h3>Shelter</h3><p>Add pets, manage listings, communicate with adopters and track applications.</p></div>
+<div class="role-card"><div class="icon">👤</div><h3>Adopter</h3><p>Browse pets, submit applications and communicate with shelters.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<h2>Every Pet Deserves A Loving Home ❤️</h2><p>Start your adoption journey today.</p>
+<a href="register.html">Create Your Account</a>
+</div>
+
+<footer>
+<h3>🐾 PetCare</h3><p>Connecting loving people with pets looking for a forever home.</p><p>© 2026 Online Pet Adoption Platform</p>
+</footer>
+</body>
+</html>
